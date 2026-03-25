@@ -135,6 +135,6 @@ app.post("/webhooks/waha", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`whatsapp-receiver listening on port ${PORT}`);
 });
