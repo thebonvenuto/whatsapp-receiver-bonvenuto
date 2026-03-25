@@ -23,7 +23,7 @@ app.get("/", (_req, res) => {
 });
 
 app.get("/health", (_req, res) => {
-  res.status(200).json({ ok: true });
+  res.status(200).send("ok");
 });
 
 function extractPhone(payload) {
