@@ -135,6 +135,11 @@ app.post("/webhooks/waha", async (req, res) => {
   }
 });
 
+console.log("Starting whatsapp-receiver...");
+console.log("PORT:", PORT);
+console.log("SUPABASE_URL exists:", !!process.env.SUPABASE_URL);
+console.log("SUPABASE_SERVICE_ROLE_KEY exists:", !!process.env.SUPABASE_SERVICE_ROLE_KEY);
+
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`whatsapp-receiver listening on port ${PORT}`);
 });
